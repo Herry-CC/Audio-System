@@ -1,0 +1,508 @@
+[
+ {
+  "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/AudioEqualizer.v",
+  "InstLine" : 1,
+  "InstName" : "AudioEqualizer",
+  "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/AudioEqualizer.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "AudioEqualizer"
+ },
+ {
+  "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/IIR.v",
+  "InstLine" : 1,
+  "InstName" : "IIR_filter",
+  "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/IIR.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "IIR_filter"
+ },
+ {
+  "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/dac.v",
+  "InstLine" : 1,
+  "InstName" : "dac",
+  "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/dac.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "dac"
+ },
+ {
+  "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+  "InstLine" : 1,
+  "InstName" : "audio_lookback",
+  "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "audio_lookback",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 44,
+    "InstName" : "Gowin_PLL",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 49,
+    "InstName" : "your_instance_name",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/gowin_pll/gowin_dac.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_DAC"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 56,
+    "InstName" : "WM8960_Init",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/WM8960_Init.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "WM8960_Init",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/WM8960_Init.v",
+      "InstLine" : 56,
+      "InstName" : "I2C_Init_Dev",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/I2C_Init_Dev.v",
+      "ModuleLine" : 16,
+      "ModuleName" : "I2C_Init_Dev",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 108,
+        "InstName" : "wm8960_init_table",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/wm8960_init_table.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "wm8960_init_table"
+       },
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/I2C_Init_Dev.v",
+        "InstLine" : 120,
+        "InstName" : "i2c_control",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/i2c_control.v",
+        "ModuleLine" : 16,
+        "ModuleName" : "i2c_control",
+        "SubInsts" : [
+         {
+          "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/i2c_control.v",
+          "InstLine" : 72,
+          "InstName" : "i2c_bit_shift",
+          "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/i2c_bit_shift.v",
+          "ModuleLine" : 16,
+          "ModuleName" : "i2c_bit_shift"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 345,
+    "InstName" : "delay_fifo",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_top.v",
+    "ModuleLine" : 1061,
+    "ModuleName" : "fifo_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_top.v",
+      "InstLine" : 1092,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "~fifo.fifo_top"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 364,
+    "InstName" : "fifo_mix_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+    "ModuleLine" : 919,
+    "ModuleName" : "fifo_mix",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+      "InstLine" : 950,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "~fifo.fifo_mix"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 381,
+    "InstName" : "fifo_mix_2",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+    "ModuleLine" : 919,
+    "ModuleName" : "fifo_mix",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+      "InstLine" : 950,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "~fifo.fifo_mix"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 398,
+    "InstName" : "fifo_mix_3",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+    "ModuleLine" : 919,
+    "ModuleName" : "fifo_mix",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+      "InstLine" : 950,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "~fifo.fifo_mix"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 677,
+    "InstName" : "Linear_Interpolation",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/Linear Interpolation.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Linear_Interpolation"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 811,
+    "InstName" : "fir_guide_a",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 831,
+    "InstName" : "fir_guide_b",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 873,
+    "InstName" : "i2s_rx",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_rx.v",
+      "InstLine" : 122,
+      "InstName" : "adc_fifo",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 903,
+    "InstName" : "fir_guide_low_adc_a",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 923,
+    "InstName" : "fir_guide_low_adc_b",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 975,
+    "InstName" : "i2s_tx",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 998,
+    "InstName" : "DAC_i2s_tx",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2s_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_tx.v",
+      "InstLine" : 113,
+      "InstName" : "dac_fifo",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "async_fifo",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+        "InstLine" : 56,
+        "InstName" : "async_fifo_ctrl_inst",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo_ctrl.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "async_fifo_ctrl"
+       },
+       {
+        "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+        "InstLine" : 83,
+        "InstName" : "dpram_inst",
+        "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/dpram.v",
+        "ModuleLine" : 1,
+        "ModuleName" : "dpram"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1044,
+    "InstName" : "uart_data_rx",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_rx.v",
+    "ModuleLine" : 41,
+    "ModuleName" : "uart_data_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_rx.v",
+      "InstLine" : 72,
+      "InstName" : "uart_byte_rx",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_byte_rx.v",
+      "ModuleLine" : 20,
+      "ModuleName" : "uart_byte_rx"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1083,
+    "InstName" : "uart_data_tx",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_tx.v",
+    "ModuleLine" : 42,
+    "ModuleName" : "uart_data_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_tx.v",
+      "InstLine" : 74,
+      "InstName" : "uart_byte_tx",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_byte_tx.v",
+      "ModuleLine" : 20,
+      "ModuleName" : "uart_byte_tx"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1105,
+    "InstName" : "LCD_uart_data_rx",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_rx.v",
+    "ModuleLine" : 41,
+    "ModuleName" : "uart_data_rx",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_rx.v",
+      "InstLine" : 72,
+      "InstName" : "uart_byte_rx",
+      "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_byte_rx.v",
+      "ModuleLine" : 20,
+      "ModuleName" : "uart_byte_rx"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1464,
+    "InstName" : "fir_guide_audio_8_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1484,
+    "InstName" : "fir_guide_audio_8_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1520,
+    "InstName" : "fir_guide_audio_7_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1540,
+    "InstName" : "fir_guide_audio_7_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1573,
+    "InstName" : "fir_guide_audio_6_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1594,
+    "InstName" : "fir_guide_audio_6_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1628,
+    "InstName" : "fir_guide_audio_5_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1648,
+    "InstName" : "fir_guide_audio_5_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1682,
+    "InstName" : "fir_guide_audio_4_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1703,
+    "InstName" : "fir_guide_audio_4_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1737,
+    "InstName" : "fir_guide_audio_2_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1758,
+    "InstName" : "fir_guide_audio_2_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1794,
+    "InstName" : "fir_guide_audio_1_0",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 1815,
+    "InstName" : "fir_guide_audio_1_1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 2101,
+    "InstName" : "fir_guide_n1",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+    "ModuleLine" : 177,
+    "ModuleName" : "fir_normal"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 2127,
+    "InstName" : "dac8550_inst",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/DAC8550.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "dac8550"
+   },
+   {
+    "InstFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+    "InstLine" : 2144,
+    "InstName" : "dac8550_inst_2",
+    "ModuleFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/DAC8550.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "dac8550"
+   }
+  ]
+ }
+]

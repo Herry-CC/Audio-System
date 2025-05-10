@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="audio_lookback" Register="644" Alu="924" Lut="1216" MULTALU27X18="14" T_Register="6836(644)" T_Alu="13031(924)" T_Lut="6323(1216)" T_MULTALU27X18="28(14)" T_Bsram="47(0)">
+    <SubModule name="Gowin_PLL"/>
+    <SubModule name="your_instance_name"/>
+    <SubModule name="WM8960_Init" Register="17" Alu="15" Lut="10" T_Register="74(17)" T_Alu="15(15)" T_Lut="173(10)" T_Bsram="1(0)">
+        <SubModule name="I2C_Init_Dev" Register="9" Lut="18" T_Register="57(9)" T_Lut="163(18)" T_Bsram="1(0)">
+            <SubModule name="wm8960_init_table" Bsram="1" T_Bsram="1(1)"/>
+            <SubModule name="i2c_control" Register="25" Lut="70" T_Register="48(25)" T_Lut="145(70)">
+                <SubModule name="i2c_bit_shift" Register="23" Lut="75" T_Register="23(23)" T_Lut="75(75)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="delay_fifo" Register="108" Alu="13" Lut="91" Bsram="8" T_Register="108(108)" T_Alu="13(13)" T_Lut="91(91)" T_Bsram="8(8)"/>
+    <SubModule name="fifo_mix_1" Register="100" Alu="12" Lut="78" Bsram="4" T_Register="100(100)" T_Alu="12(12)" T_Lut="78(78)" T_Bsram="4(4)"/>
+    <SubModule name="fifo_mix_2" Register="100" Alu="12" Lut="78" Bsram="4" T_Register="100(100)" T_Alu="12(12)" T_Lut="78(78)" T_Bsram="4(4)"/>
+    <SubModule name="fifo_mix_3" Register="100" Alu="12" Lut="78" Bsram="4" T_Register="100(100)" T_Alu="12(12)" T_Lut="78(78)" T_Bsram="4(4)"/>
+    <SubModule name="Linear_Interpolation" Register="82" Lut="118" T_Register="82(82)" T_Lut="118(118)"/>
+    <SubModule name="fir_guide_a" Register="459" Alu="304" MULTALU27X18="8" T_Register="459(459)" T_Alu="304(304)" T_MULTALU27X18="8(8)"/>
+    <SubModule name="fir_guide_b" Register="503" Alu="586" Lut="106" MULTALU27X18="6" T_Register="503(503)" T_Alu="586(586)" T_Lut="106(106)" T_MULTALU27X18="6(6)"/>
+    <SubModule name="i2s_rx" Register="81" Lut="66" T_Register="188(81)" T_Alu="16(0)" T_Lut="125(66)" T_Bsram="1(0)">
+        <SubModule name="adc_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="fir_guide_low_adc_a" Register="213" Alu="161" Lut="11" T_Register="213(213)" T_Alu="161(161)" T_Lut="11(11)"/>
+    <SubModule name="fir_guide_low_adc_b" Register="210" Alu="161" Lut="11" T_Register="210(210)" T_Alu="161(161)" T_Lut="11(11)"/>
+    <SubModule name="i2s_tx" Register="46" Lut="47" T_Register="153(46)" T_Alu="16(0)" T_Lut="106(47)" T_Bsram="1(0)">
+        <SubModule name="dac_fifo" Register="32" T_Register="107(32)" T_Alu="16(0)" T_Lut="59(0)" T_Bsram="1(0)">
+            <SubModule name="async_fifo_ctrl_inst" Register="75" Alu="16" Lut="59" T_Register="75(75)" T_Alu="16(16)" T_Lut="59(59)"/>
+            <SubModule name="dpram_inst" Bsram="1" T_Bsram="1(1)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="DAC_i2s_tx" Lut="1" T_Lut="1(1)"/>
+    <SubModule name="uart_data_rx" Register="536" Lut="303" T_Register="607(536)" T_Lut="422(303)">
+        <SubModule name="uart_byte_rx" Register="71" Lut="119" T_Register="71(71)" T_Lut="119(119)"/>
+    </SubModule>
+    <SubModule name="uart_data_tx" Register="102" Lut="201" T_Register="133(102)" T_Lut="250(201)">
+        <SubModule name="uart_byte_tx" Register="31" Lut="49" T_Register="31(31)" T_Lut="49(49)"/>
+    </SubModule>
+    <SubModule name="LCD_uart_data_rx" Register="88" Lut="79" T_Register="157(88)" T_Lut="198(79)">
+        <SubModule name="uart_byte_rx" Register="69" Lut="119" T_Register="69(69)" T_Lut="119(119)"/>
+    </SubModule>
+    <SubModule name="fir_guide_audio_8_0" Register="431" Alu="714" Lut="114" T_Register="431(431)" T_Alu="714(714)" T_Lut="114(114)"/>
+    <SubModule name="fir_guide_audio_8_1" Register="431" Alu="714" Lut="114" T_Register="431(431)" T_Alu="714(714)" T_Lut="114(114)"/>
+    <SubModule name="fir_guide_audio_7_0" Register="219" Alu="1172" Lut="95" T_Register="219(219)" T_Alu="1172(1172)" T_Lut="95(95)"/>
+    <SubModule name="fir_guide_audio_7_1" Register="219" Alu="1172" Lut="95" T_Register="219(219)" T_Alu="1172(1172)" T_Lut="95(95)"/>
+    <SubModule name="fir_guide_audio_6_0" Register="67" Alu="315" Lut="76" T_Register="67(67)" T_Alu="315(315)" T_Lut="76(76)"/>
+    <SubModule name="fir_guide_audio_6_1" Register="67" Alu="315" Lut="76" T_Register="67(67)" T_Alu="315(315)" T_Lut="76(76)"/>
+    <SubModule name="fir_guide_audio_4_0" Register="68" Alu="426" Lut="14" T_Register="68(68)" T_Alu="426(426)" T_Lut="14(14)"/>
+    <SubModule name="fir_guide_audio_4_1" Register="68" Alu="426" Lut="14" T_Register="68(68)" T_Alu="426(426)" T_Lut="14(14)"/>
+    <SubModule name="fir_guide_audio_2_0" Register="209" Alu="1375" Lut="104" T_Register="209(209)" T_Alu="1375(1375)" T_Lut="104(104)"/>
+    <SubModule name="fir_guide_audio_2_1" Register="209" Alu="1375" Lut="103" T_Register="209(209)" T_Alu="1375(1375)" T_Lut="103(103)"/>
+    <SubModule name="fir_guide_audio_1_0" Register="45" Alu="214" Lut="3" T_Register="45(45)" T_Alu="214(214)" T_Lut="3(3)"/>
+    <SubModule name="fir_guide_audio_1_1" Register="45" Alu="214" Lut="3" T_Register="45(45)" T_Alu="214(214)" T_Lut="3(3)"/>
+    <SubModule name="fir_guide_n1" Register="256" Alu="2352" Lut="1904" T_Register="256(256)" T_Alu="2352(2352)" T_Lut="1904(1904)"/>
+    <SubModule name="dac8550_inst" Register="23" Lut="16" T_Register="23(23)" T_Lut="16(16)"/>
+    <SubModule name="dac8550_inst_2" Register="23" Lut="16" T_Register="23(23)" T_Lut="16(16)"/>
+    <SubModule name="gw_gao_inst_0" Register="625" Alu="15" Lut="514" Bsram="24" T_Register="625(625)" T_Alu="15(15)" T_Lut="514(514)" T_Bsram="24(24)"/>
+</Module>

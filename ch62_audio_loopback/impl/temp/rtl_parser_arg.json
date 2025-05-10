@@ -1,0 +1,117 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/AudioEqualizer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/DAC8550.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/IIR.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/Linear Interpolation.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/I2C_Init_Dev.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/WM8960_Init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/i2c_bit_shift.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/i2c_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/WM8960_Init/wm8960_init_table.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/dac.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/async_fifo_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo/dpram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_mix.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fifo_top/fifo_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/fir_normal/fir_normal.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/gowin_pll/gowin_dac.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/i2s/i2s_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/top/audio_lookback.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_byte_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_byte_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/uart/uart_data_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/fpga/Go_win_prj/ch62_audio_loopback/src/upsampling.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 48000,
+ "ResultFile" : "D:/fpga/Go_win_prj/ch62_audio_loopback/impl/temp/rtl_parser.result",
+ "Top" : "audio_lookback",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

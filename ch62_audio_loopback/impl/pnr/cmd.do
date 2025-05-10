@@ -1,0 +1,17 @@
+-d D:\GOWIN_FPGA_BUSNESS\pro\ch62_audio_loopback\impl\gwsynthesis\audio_loopback.vg
+-p GW5A-25A-UBGA324-2
+-pn GW5A-LV25UG324C2/I1
+-cst D:\GOWIN_FPGA_BUSNESS\pro\ch62_audio_loopback\src\audio_loopback.cst
+-cfg D:\GOWIN_FPGA_BUSNESS\pro\ch62_audio_loopback\impl\pnr\device.cfg
+-gao_crc 0101100010101011
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0
+-rtl_gao

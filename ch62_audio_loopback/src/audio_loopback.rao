@@ -1,0 +1,161 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="clk_48M" trig_type="0" storage_depth="4096" window_num="1" capture_amount="4096" implementation="0" trigger_pos="0" module_name="audio_lookback" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Bus capture_enable="true" name="adcfifo_readdata[31:0]">
+                <Signal>adcfifo_readdata[31]</Signal>
+                <Signal>adcfifo_readdata[30]</Signal>
+                <Signal>adcfifo_readdata[29]</Signal>
+                <Signal>adcfifo_readdata[28]</Signal>
+                <Signal>adcfifo_readdata[27]</Signal>
+                <Signal>adcfifo_readdata[26]</Signal>
+                <Signal>adcfifo_readdata[25]</Signal>
+                <Signal>adcfifo_readdata[24]</Signal>
+                <Signal>adcfifo_readdata[23]</Signal>
+                <Signal>adcfifo_readdata[22]</Signal>
+                <Signal>adcfifo_readdata[21]</Signal>
+                <Signal>adcfifo_readdata[20]</Signal>
+                <Signal>adcfifo_readdata[19]</Signal>
+                <Signal>adcfifo_readdata[18]</Signal>
+                <Signal>adcfifo_readdata[17]</Signal>
+                <Signal>adcfifo_readdata[16]</Signal>
+                <Signal>adcfifo_readdata[15]</Signal>
+                <Signal>adcfifo_readdata[14]</Signal>
+                <Signal>adcfifo_readdata[13]</Signal>
+                <Signal>adcfifo_readdata[12]</Signal>
+                <Signal>adcfifo_readdata[11]</Signal>
+                <Signal>adcfifo_readdata[10]</Signal>
+                <Signal>adcfifo_readdata[9]</Signal>
+                <Signal>adcfifo_readdata[8]</Signal>
+                <Signal>adcfifo_readdata[7]</Signal>
+                <Signal>adcfifo_readdata[6]</Signal>
+                <Signal>adcfifo_readdata[5]</Signal>
+                <Signal>adcfifo_readdata[4]</Signal>
+                <Signal>adcfifo_readdata[3]</Signal>
+                <Signal>adcfifo_readdata[2]</Signal>
+                <Signal>adcfifo_readdata[1]</Signal>
+                <Signal>adcfifo_readdata[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="mode[3:0]">
+                <Signal>mode[3]</Signal>
+                <Signal>mode[2]</Signal>
+                <Signal>mode[1]</Signal>
+                <Signal>mode[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="ADC_FS[10:0]">
+                <Signal>ADC_FS[10]</Signal>
+                <Signal>ADC_FS[9]</Signal>
+                <Signal>ADC_FS[8]</Signal>
+                <Signal>ADC_FS[7]</Signal>
+                <Signal>ADC_FS[6]</Signal>
+                <Signal>ADC_FS[5]</Signal>
+                <Signal>ADC_FS[4]</Signal>
+                <Signal>ADC_FS[3]</Signal>
+                <Signal>ADC_FS[2]</Signal>
+                <Signal>ADC_FS[1]</Signal>
+                <Signal>ADC_FS[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="DAC_FS[10:0]">
+                <Signal>DAC_FS[10]</Signal>
+                <Signal>DAC_FS[9]</Signal>
+                <Signal>DAC_FS[8]</Signal>
+                <Signal>DAC_FS[7]</Signal>
+                <Signal>DAC_FS[6]</Signal>
+                <Signal>DAC_FS[5]</Signal>
+                <Signal>DAC_FS[4]</Signal>
+                <Signal>DAC_FS[3]</Signal>
+                <Signal>DAC_FS[2]</Signal>
+                <Signal>DAC_FS[1]</Signal>
+                <Signal>DAC_FS[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">clk_out_48k</Signal>
+            <Signal capture_enable="true">clk_out_768k</Signal>
+            <Signal capture_enable="true">dac_clk_normal</Signal>
+            <Bus capture_enable="true" name="LP[10:0]">
+                <Signal>LP[10]</Signal>
+                <Signal>LP[9]</Signal>
+                <Signal>LP[8]</Signal>
+                <Signal>LP[7]</Signal>
+                <Signal>LP[6]</Signal>
+                <Signal>LP[5]</Signal>
+                <Signal>LP[4]</Signal>
+                <Signal>LP[3]</Signal>
+                <Signal>LP[2]</Signal>
+                <Signal>LP[1]</Signal>
+                <Signal>LP[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="high_beishu[3:0]">
+                <Signal>high_beishu[3]</Signal>
+                <Signal>high_beishu[2]</Signal>
+                <Signal>high_beishu[1]</Signal>
+                <Signal>high_beishu[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">send_en</Signal>
+            <Bus capture_enable="true" name="coef_matlab[0][15:0]">
+                <Signal>coef_matlab[0][15]</Signal>
+                <Signal>coef_matlab[0][14]</Signal>
+                <Signal>coef_matlab[0][13]</Signal>
+                <Signal>coef_matlab[0][12]</Signal>
+                <Signal>coef_matlab[0][11]</Signal>
+                <Signal>coef_matlab[0][10]</Signal>
+                <Signal>coef_matlab[0][9]</Signal>
+                <Signal>coef_matlab[0][8]</Signal>
+                <Signal>coef_matlab[0][7]</Signal>
+                <Signal>coef_matlab[0][6]</Signal>
+                <Signal>coef_matlab[0][5]</Signal>
+                <Signal>coef_matlab[0][4]</Signal>
+                <Signal>coef_matlab[0][3]</Signal>
+                <Signal>coef_matlab[0][2]</Signal>
+                <Signal>coef_matlab[0][1]</Signal>
+                <Signal>coef_matlab[0][0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">clk_19and2M</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>clk_out_48k</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="0" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0101100010101011</GAO_ID>
+</GAO_CONFIG>
